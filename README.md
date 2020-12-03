@@ -185,6 +185,9 @@ Write your javascript solution below
 // your answer here
 ```
 
+## Homework Submission
+https://git.generalassemb.ly/seir-alahsa/w01d01/blob/master/notes/note_w01d01.03_hw_submission/note_w01d01-homework-submission.md
+
 # Additional Resources
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#
