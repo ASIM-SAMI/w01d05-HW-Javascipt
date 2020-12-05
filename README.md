@@ -25,15 +25,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is ...
+a is bongos
 ```
 2.  What is `b`?
 ```
-b is ...
+b is true
 ```
 3.  What is `c`?
 ```
-c is ...
+c is bongos // because var of `a` override in line 20.
 ```
 
 ## Concatenation
@@ -53,7 +53,7 @@ Result should be:
 ### Your solution here:
 4.  Fill in the `console.log()`?
 ```js
-console.log()
+console.log(firstWord+" "+secondWord+" "+thirdWord+" "+fourthWord);
 ```
 
 Output a console log `The sum of 5 and 10 is 15` where the values for 5 and 10 are saved to variables, and where 15 comes from those variables being summed.
@@ -65,39 +65,39 @@ const num2 = 10;
 ### Your solution here:
 5.  How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
+const  num3 = num1 + num2;
 ```
 6.  Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log()
+console.log("The sum of "+num1+" and "+num2+" is "+num3);
 ```
 
 ## Comparisons
 By just looking at the following expressions, determine in your mind whether or not each will evaluate to true or false
 ```
-a) 999 > 999
+a) 999 > 999  
 b) 999 === 999 
 c) 999 !== 999
-d) -5 >= -4
-e) 100 <= -100
+d) -5 >= -4   
+e) 100 <= -100 
 f) 20 + 5 < 5 
-g) 81 / 9 === 9
-h) 9 !== 8 + 1
+g) 81 / 9 === 9 
+h) 9 !== 8 + 1  
 ```
 ### Your solution here:
 7.  Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) true
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ## Conditionals
@@ -112,7 +112,29 @@ Write a conditional statement that...
 ### Your solution here:
 8.  Write your javascript solution below
 ```js
-// your answer here
+
+let num = 50;
+
+if(num % 3 == 0 && num % 5 == 0){
+
+	num = "FizzBuzz";
+	console.log(num);
+
+}else if(num % 3 == 0){
+
+    num = "Fizz";
+	console.log(num);
+
+}else if(num % 5 == 0){
+    num = "Buzz";
+	console.log(num);
+
+}else{
+
+	console.log("The number is "+num+" .");
+}
+
+
 ```
 
 
@@ -162,27 +184,66 @@ const thomsCloset = [
 
 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + _the third item in Kristyn's closet_ + " today!" to the console.
 
-1. Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named `kristynShoe`.
 
-1. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
+2. Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named `kristynShoe`.
 
-1. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
 
-1. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
+3. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
 
-1. In the same way, access one item from Thom's pants array.
 
-1. Access one item from Thom's accessories array.
+4. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
 
-1. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
 
-1. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
- 
+5. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
+
+
+6. In the same way, access one item from Thom's pants array.
+
+
+7. Access one item from Thom's accessories array.
+
+
+8. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
+
+
+9. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
+
+
 ### After finishing all the steps place your solution here:
 
 Write your javascript solution below
 ```js
-// your answer here
+// 1
+console.log("Kristyn is rocking that "
++kristynsCloset[2]+" today!");
+
+// 2
+let kristynShoe = kristynsCloset.shift(); //Note: all upcoming answers are same waterflow of the requirements. execute in order of req.
+console.log(kristynsCloset);
+
+// 3
+kristynsCloset.splice(5 , 0 , "raybans"); 
+console.log(kristynsCloset);
+
+// 4
+kristynsCloset[4] = "stained knit hat"; 
+console.log(kristynsCloset);
+
+// 5
+console.log(thomsCloset[0]);
+
+// 6
+console.log(thomsCloset[1][1]); //Thom's pants >> jeans.
+
+// 7
+console.log(thomsCloset[2][0]); //Thom's accessories >> wool mittens.
+
+// 8
+console.log("Thom is looking fierce in a "+thomsCloset[0][0]+", "+thomsCloset[1][1]+" and "+thomsCloset[2][1]+"!");
+
+// 9
+thomsCloset[1][2] = "Footie Pajamas";
+console.log(thomsCloset[1]);
 ```
 
 ## Homework Submission
